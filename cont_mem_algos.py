@@ -19,7 +19,7 @@ def first_fit(memory: list[tuple], req: int, index: int):
                 memory.pop(index)
                 
                 if index > len(memory) - 1:
-                    index -= 1
+                    index = 0
 
             return memory, new_base, new_limit, index
         
